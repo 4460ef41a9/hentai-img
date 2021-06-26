@@ -2,7 +2,6 @@
 Image downloader for hentai-img.com and sites related to it
 
 # requirements
-* Selenium
 * Cloudscraper
 * bs4
 
