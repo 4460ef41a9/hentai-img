@@ -6,6 +6,11 @@ Image downloader for hentai-img.com and sites related to it
 * Cloudscraper
 * bs4
 
+Or simply do:
+```
+pip install -r requirements.txt
+```
+
 # Usage
 1. You will need to download selenium webdriver for your respective browser engine and replace the path to your webdriver at line 6.
 ```python
