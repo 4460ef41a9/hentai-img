@@ -20,6 +20,6 @@ driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
 3. Make sure the url starts with ```https:\\hentai-img.com\story``` instead of ```https:\\hentai-img.com\image```
 
 # Todo List
-- [ ] Remove selenium from the script
+- [X] Remove selenium from the script
 - [ ] Support for surls with ```https:\\hentai-img.com\image```
 - [ ] Tagging downloaded files
