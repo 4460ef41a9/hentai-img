@@ -1,4 +1,4 @@
-from selenium import webdriver
+from selenium import webdriver #Used selenium because cloudscraper doesnt work with bs4 for some odd reason
 from bs4 import BeautifulSoup
 from cloudscraper import CloudScraper
 import os
