@@ -16,5 +16,5 @@ pip install -r requirements.txt
 
 # Todo List
 - [X] Remove selenium from the script
-- [ ] Support for surls with ```https:\\hentai-img.com\image```
+- [X] Support for urls with ```https:\\hentai-img.com\image```
 - [ ] Tagging downloaded files

@@ -9,11 +9,15 @@ warnings.simplefilter("ignore")
 def url_change(url):
   url_split = url.split("/")
   url_split[3] = "story"
-  url = "/".join(str(v) for v in url_split)
+  return "/".join(str(v) for v in url_split)
 
 def imagedown(url, folder):
   scraper = CloudScraper.create_scraper()
-  source = scraper.get(url).text
+  if url.split("/")[3] == "image":
+    url_change(url)
+    source = scraper.get(url_change(url)).text
+  else:
+    source = scraper.get(url).text
   soup = BeautifulSoup(source)
   images = soup.find_all("amp-img")
   try:
@@ -30,10 +34,5 @@ def imagedown(url, folder):
         print("Writing: ", name[-1])
     else:
       print("This url is not valid!")
-
-if url.split("/")[3] == "image":
-  url_change(url)
-else:
-  pass
 
 imagedown(url, folder)
