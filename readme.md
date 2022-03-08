@@ -4,6 +4,7 @@ Image downloader for hentai-img.com and sites related to it
 # requirements
 * Cloudscraper
 * bs4
+* lxml
 
 Or simply do:
 ```
